@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computex Computer</title>
+    <style>
+        /* ==== GENERAL BODY STYLING ==== */
+        body {
+            background-color: #000000;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 30px;
+            margin: 0;
+        }
+
+        /* ==== TYPEWRITER HEADER ==== */
+        .typewriter {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #FFD700;
+            color: #FFD700;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            animation: typewriter 4s steps(40) 1 forwards, blink 0.7s step-end infinite;
+            width: 0;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* ==== WELCOME TEXT ==== */
+        .welcome {
+            font-size: 22px;
+            color: #FFCC00;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #ffcc00aa;
+        }
+
+        /* ==== NAVIGATION BUTTONS ==== */
+        .nav {
+            margin: 20px 0;
+        }
+
+        .nav a button {
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #FFD70099;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .nav a button:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+        }
+
+        /* ==== SECTION TITLE ==== */
+        .section-title {
+            color: #FFD700;
+            font-size: 28px;
+            margin-top: 40px;
+            text-shadow: 0 0 10px #FFD70066;
+        }
+
+        /* ==== INFO PARAGRAPH ==== */
+        .info {
+            color: #DDDDDD;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        /* ==== PRODUCT LIST GRID ==== */
+        .product-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* ==== PRODUCT CARD ==== */
+        .product-card {
+            background-color: #1A1A1A;
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 0 0 15px #FFD70055, 0 0 10px #ffffff22 inset;
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #FFD700AA;
+        }
+
+        .product-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #ffdd55;
+            text-shadow: 0 0 6px #FFD70066;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        /* ==== PRODUCT IMAGES ==== */
+        .product-card img {
+            width: 100px;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #FFD70066;
+        }
+
+        /* ==== FOOTER ==== */
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            color: #BBBBBB;
+            text-shadow: 0 0 6px #FFD70066;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="typewriter">COMPUTEX COMPUTER</h1>
+    <h2 class="welcome">WELCOME TO COMPUTEX COMPUTER - THE TECH HUB</h2>
+
+    <header>
+        <div class="nav">
+            <a href="header/myself.html"><button>MY SELF</button></a>
+            <a href="#product"><button>PRODUCTS</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="product">
+            <h1 class="section-title">OUR PRODUCTS</h1>
+            <p class="info">This website is for educational purpose only. Products shown are just examples.</p>
+
+            <div class="product-list">
+                <div class="product-card">
+                    <h3>Gaming Keyboard</h3>
+                    <img src="https://m.media-amazon.com/images/I/61vY8WXxvjL._SL1200_.jpg" alt="Gaming Keyboard">
+                    <p>Price: ₹1,299</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Wireless Mouse</h3>
+                    <img src="https://m.media-amazon.com/images/I/31qJ7qfj-9L._SX300_SY300_QL70_FMwebp_.jpg" alt="Wireless Mouse">
+                    <p>Price: ₹699</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>RGB Cabinet</h3>
+                    <img src="https://m.media-amazon.com/images/I/4119g+zyssL._SY300_SX300_.jpg" alt="RGB Cabinet">
+                    <p>Price: ₹3,999</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>LED Monitor</h3>
+                    <img src="https://m.media-amazon.com/images/I/410QRmCiZbL._SY300_SX300_QL70_FMwebp_.jpg" alt="LED Monitor">
+                    <p>Price: ₹7,999</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Computex Computer | Made by Dharm Patel ❤️ | Educational Purpose Only
+    </footer>
+
+</body>
+
+</html>
